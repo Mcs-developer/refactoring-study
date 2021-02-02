@@ -9,9 +9,7 @@ export function statement(invoice, plays) {
   }).format;
 
   for (let perf of invoice.performances) {
-    // console.log(perf);
     const play = plays[perf.playID];
-    console.log(play);
     let thisAmount = 0;
 
     switch (play.type) {
